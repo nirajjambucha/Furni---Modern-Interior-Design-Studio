@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni-Modern Interior Design Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicone.png" type="image/x-icon">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body style="background-color: #efecec;">
+
+    <!-- <h1>navbar</h1> -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand ml--5" href="home.html">Furni<span class="dot"></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0 mr-4">
+                    <li class="nav-item  mx-2">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="active"><a class="nav-link mx-2" href="shop.html">Shop</a></li>
+                    <li><a class="nav-link mx-2" href="about-us.html">About us</a></li>
+                    <li><a class="nav-link mx-2" href="services.html">Services</a></li>
+                    <li><a class="nav-link mx-2" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link mx-2" href="contact-us.html">Contact us</a></li>
+                </ul>
+
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li><a class="nav-link mr-4" href="#"><img src="img/user.png" alt="User"></a></li>
+                    <li><a class="nav-link" href="#"><img src="img/shopping-cart.png" alt="Shopping Cart"></a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $(".custom-navbar-nav a").on("click", function () {
+                    $(".custom-navbar-nav").find(".active").removeClass("active");
+                    $(this).parent().addClass("active");
+                });
+            });
+        </script>
+    </nav>
+
+    <!-- <h1><li>benner</li></h1> -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>Shop</h1>
+                        <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                            vulputate velit imperdiet dolor tempor tristique.</p>
+                            <p><a href="shop.html" class="btn shop">Shop Now</a><a href="services.html" class="btn Explore">Explore</a></p>
+                        </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap">
+                        <img src="img/couch.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- shop now -->
+    <div class="untree_co-section product-section before-footer-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/sofa.png" class="img-fluid product-thumbnail" style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$50.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-1 (1).png" class="img-fluid product-thumbnail" style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$67.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-2 (1).png" class="img-fluid product-thumbnail" style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$57.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-4-removebg-preview.png" class="img-fluid product-thumbnail"
+                        style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$77.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-5-removebg-preview.png" class="img-fluid product-thumbnail"
+                        style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$56.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-6-removebg-preview.png" class="img-fluid product-thumbnail"
+                        style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$69.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-7-removebg-preview.png" class="img-fluid product-thumbnail"
+                        style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$35.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img src="img/product-3 (1).png" class="img-fluid product-thumbnail" style="height: 250px;">
+                    <h3 class="product-title">Nordic Chair</h3>
+                    <p class="product-price">$59.00</p>
+                    <span class="add">
+                        <a href="cart.html"><img src="img/add.png" class="img-fluid"></a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  Footer Section -->
+    <footer class="footer-section" style="background-color: white;">
+        <div class="relative">
+
+            <div class="sofa-img">
+                <img src="img/sofa.png" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="subscription-form">
+                        <h3 class="d-flex align-items-center"><span class="me-1"><img src="img/email (2).png"
+                                    alt="Image" class="img-fluid" style="padding:0 10px 3px 0px"></span><span
+                                style="color: #3b5b50;font-size: 18px;">Subscribe to Newsletter</span></h3>
+
+                        <form action="#" class="row g-3">
+                            <div class="col-auto">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="col-auto">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary">
+                                    <span class="fas fa-paper-plane"></span>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mb-5" style="margin: 48px 0 0;">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"
+                            style="color: #3b5b50;font-size: 32px;font-weight: 500;text-decoration: none;">Furni<span>.</span></a>
+                    </div>
+                    <p class="mb-4" style="color: #6a6a6a;font-size: 14px;">Donec facilisis quam ut purus rutrum
+                        lobortis. Donec vitae odio quis nisl dapibus
+                        malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                        Pellentesque habitant</p>
+
+                    <ul class="list-unstyled custom-social">
+                        <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-8" style="margin-top: 65px;">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#">About us</a></li>
+                                <li class="mb-3"><a href="#">Services</a></li>
+                                <li class="mb-3"><a href="#">Blog</a></li>
+                                <li class="mb-3"><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#">Support</a></li>
+                                <li class="mb-3"><a href="#">Knowledge base</a></li>
+                                <li class="mb-3"><a href="#">Live chat</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#">Jobs</a></li>
+                                <li class="mb-3"><a href="#">Our team</a></li>
+                                <li class="mb-3"><a href="#">Leadership</a></li>
+                                <li class="mb-3"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><a href="#">Nordic Chair</a></li>
+                                <li class="mb-3"><a href="#">Kruzo Aero</a></li>
+                                <li class="mb-3"><a href="#">Ergonomic Chair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2  text-lg-start" style="color: #6a6a6a;font-size: 14px;">Copyright &copy;
+                            . All Rights Reserved. &mdash;
+                            Designed with love by <a href=""
+                                style="font-size: 14px;font-weight: 500;color: #2f2f2f;">niraj jambucha</a> Distributed
+                            By <a>niraj jambucha</a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <ul class="list-unstyled d-inline-flex ms-auto" style="padding-left: 410px;">
+                            <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

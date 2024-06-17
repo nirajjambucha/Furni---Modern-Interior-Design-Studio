@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furni-Modern Interior Design Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/img/favicone.png" type="image/x-icon">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body style="background-color: #f3f3f3;">
+
+  <!-- <h1>navbar</h1> -->
+  <nav class="custom-navbar navbar navbar-expand-md navbar-dark ">
+    <div class="container" id="home">
+      <a class="navbar-brand ml--5" href="home.html">Furni<span class="dot"></span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsFurni"
+        aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0 mr-4">
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li><a class="nav-link mx-2" href="shop.html">Shop</a></li>
+          <li><a class="nav-link mx-2" href="about-us.html">About us</a></li>
+          <li><a class="nav-link mx-2" href="services.html">Services</a></li>
+          <li><a class="nav-link mx-2" href="blog.html">Blog</a></li>
+          <li><a class="nav-link mx-2" href="contact-us.html">Contact us</a></li>
+        </ul>
+
+        <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+          <li><a class="nav-link mr-4" href="#"><img src="img/user.png" alt="User"></a></li>
+          <li><a class="nav-link" href="#"><img src="img/shopping-cart.png" alt="Shopping Cart"></a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".custom-navbar-nav a").on("click", function () {
+          $(".custom-navbar-nav").find(".active").removeClass("active");
+          $(this).parent().addClass("active");
+        });
+      });
+    </script>
+  </nav>
+
+  <!-- <h1><li>benner</li></h1> -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Cart</h1>
+          </div>
+        </div>
+        <div class="col-lg-7">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div class="untree_co-section before-footer-section">
+    <div class="container">
+      <div class="row mb-5">
+        <form class="col-md-12" method="post">
+          <div class="site-blocks-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="product-thumbnail">Image</th>
+                  <th class="product-name">Product</th>
+                  <th class="product-price">Price</th>
+                  <th class="product-quantity">Quantity</th>
+                  <th class="product-total">Total</th>
+                  <th class="product-remove">Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="product-thumbnail">
+                    <img src="img/product-1.png" alt="Image" class="img-fluid" style="height: 160px; width: 160px;">
+                  </td>
+                  <td class="product-name">
+                    <h2 class="h5 text-black">Product 1</h2>
+                  </td>
+                  <td>$49.00</td>
+                  <td>
+                    <div class="input-group mb-3 d-flex align-items-center" style="max-width: 120px;">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-black decrease" type="button">&minus;</button>
+                      </div>
+                      <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-black increase" type="button">&plus;</button>
+                      </div>
+                    </div>
+
+                  </td>
+                  <td>$49.00</td>
+                  <td><a href="#" class="btn btn-black btn-sm" style="text-decoration: none;">X</a></td>
+                </tr>
+
+                <tr>
+                  <td class="product-thumbnail">
+                    <img src="img/product-2 (1).png" alt="Image" class="img-fluid" style="height: 160px; width: 160px;">
+                  </td>
+                  <td class="product-name">
+                    <h2 class="h5 text-black">Product 2</h2>
+                  </td>
+                  <td>$49.00</td>
+                  <td>
+                    <div class="input-group mb-3 d-flex align-items-center quantity-container"
+                      style="max-width: 120px;">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-black decrease" type="button">&minus;</button>
+                      </div>
+                      <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-black increase" type="button">&plus;</button>
+                      </div>
+                    </div>
+
+                  </td>
+                  <td>$49.00</td>
+                  <td><a href="#" class="btn btn-black btn-sm" style="text-decoration: none;">X</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row mb-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <button class="btn Explore3">Update Cart</button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn Explore3">Continue Shopping</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label class="text-black h4" for="coupon">Coupon</label>
+              <p>Enter your coupon code if you have one.</p>
+            </div>
+            <div class="col-md-8 mb-3 mb-md-0">
+              <input type="text" class="form-control ram py-3" id="coupon" placeholder="Coupon Code"
+                style="height: 50px; border-radius: 10px;">
+            </div>
+            <div class="col-md-4">
+              <button class="btn Explore3"> Coupon</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-5">
+          <div class="row justify-content-end">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 text-right border-bottom mb-5">
+                  <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <span class="text-black">Subtotal</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">$230.00</strong>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <span class="text-black">Total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">$230.00</strong>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn Explore3">Proceed
+                    To Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Footer Section -->
+  <footer class="footer-section" style="background-color: white;">
+    <div class="relative">
+
+      <div class="sofa-img">
+        <img src="img/sofa.png" alt="Image" class="img-fluid">
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="subscription-form">
+            <h3 class="d-flex align-items-center"><span class="me-1"><img src="img/email (2).png" alt="Image"
+                  class="img-fluid" style="padding:0 10px 3px 0px"></span><span
+                style="color: #3b5b50;font-size: 18px;">Subscribe to Newsletter</span></h3>
+
+            <form action="#" class="row g-3">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="col-auto">
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary">
+                  <span class="fas fa-paper-plane"></span>
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mb-5" style="margin: 48px 0 0;">
+        <div class="col-lg-4">
+          <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"
+              style="color: #3b5b50;font-size: 32px;font-weight: 500;text-decoration: none;">Furni<span>.</span></a>
+          </div>
+          <p class="mb-4" style="color: #6a6a6a;font-size: 14px;">Donec facilisis quam ut purus rutrum
+            lobortis. Donec vitae odio quis nisl dapibus
+            malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            Pellentesque habitant</p>
+
+          <ul class="list-unstyled custom-social">
+            <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-8" style="margin-top: 65px;">
+          <div class="row links-wrap">
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="mb-3"><a href="#">About us</a></li>
+                <li class="mb-3"><a href="#">Services</a></li>
+                <li class="mb-3"><a href="#">Blog</a></li>
+                <li class="mb-3"><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="mb-3"><a href="#">Support</a></li>
+                <li class="mb-3"><a href="#">Knowledge base</a></li>
+                <li class="mb-3"><a href="#">Live chat</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="mb-3"><a href="#">Jobs</a></li>
+                <li class="mb-3"><a href="#">Our team</a></li>
+                <li class="mb-3"><a href="#">Leadership</a></li>
+                <li class="mb-3"><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="mb-3"><a href="#">Nordic Chair</a></li>
+                <li class="mb-3"><a href="#">Kruzo Aero</a></li>
+                <li class="mb-3"><a href="#">Ergonomic Chair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-top copyright">
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <p class="mb-2  text-lg-start" style="color: #6a6a6a;font-size: 14px;">Copyright &copy;
+              . All Rights Reserved. &mdash;
+              Designed with love by <a href="" style="font-size: 14px;font-weight: 500;color: #2f2f2f;">niraj
+                jambucha</a> Distributed
+              By <a>niraj jambucha</a>
+            </p>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <ul class="list-unstyled d-inline-flex ms-auto" style="padding-left: 410px;">
+              <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
